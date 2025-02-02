@@ -84,12 +84,12 @@ define Device/rk3399_r08
 endef
 TARGET_DEVICES += rk3399_r08
 
-define Device/rk3399_tpm312
+define Device/rk3399_tvi3315a
   DEVICE_VENDOR := RK3399
-  DEVICE_MODEL := TPM312
+  DEVICE_MODEL := tvi3315a
   SOC := rk3399
-  SUPPORTED_DEVICES := rk3399,tpm312
-  UBOOT_DEVICE_NAME := tpm312-rk3399
+  SUPPORTED_DEVICES := rk3399,tvi3315a
+  UBOOT_DEVICE_NAME := tvi3315a-rk3399
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-img | gzip | append-metadata
 endef
-TARGET_DEVICES += rk3399_tpm312
+TARGET_DEVICES += rk3399_tvi3315a
